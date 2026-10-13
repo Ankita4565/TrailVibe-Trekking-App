@@ -1,0 +1,7 @@
+# Keep this file out of GitHub: it has a default admin email and password
+create_admin.php
+
+# Computer junk files
+Thumbs.db
+.DS_Store
+*.log

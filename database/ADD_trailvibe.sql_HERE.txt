@@ -1,0 +1,2 @@
+Export your database from phpMyAdmin (trailvibe -> Export -> Go) and save it here as: trailvibe.sql
+Then delete this note file.

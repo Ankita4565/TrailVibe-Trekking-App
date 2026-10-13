@@ -1,0 +1,186 @@
+/* ===== BASE ===== */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: #f4f4f9;
+    color: #333;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #3b2b2b;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #4caf50;
+}
+
+/* ===== HEADER ===== */
+header {
+    position: relative;
+    text-align: center;
+    padding: 80px 20px;
+    color: #fff;
+    background: url('mountains.jpg') center/cover no-repeat;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .4);
+}
+
+header * {
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+header p {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* ===== CARDS ===== */
+.cards-container,
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.cards-container {
+    padding: 60px 20px;
+}
+
+.card {
+    width: 300px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .15);
+    transition: .8s;
+}
+
+.card h2 {
+    text-align: center;
+    color: #3b2b2b;
+    margin-bottom: 15px;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card li {
+    margin: 10px 0;
+}
+
+/* ===== TEAM ===== */
+.team {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.team h2 {
+    margin-bottom: 40px;
+}
+
+.team-members {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.member {
+    flex: 0 0 180px;
+    text-align: center;
+}
+
+.member img {
+    width: 100%;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, .2);
+    transition: .3s;
+}
+
+.member img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, .3);
+}
+
+.member p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* ===== CONTACT ===== */
+.contact {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+    background: #e6f2ff;
+    border-radius: 12px;
+}
+
+/* ===== ANIMATION ===== */
+.animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: .8s;
+}
+
+.animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

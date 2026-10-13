@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrailVibe Trekking Community</title>
+    <link rel="stylesheet" href="aboutus.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>TrailVibe Trekking Community</h1>
+        <p>Exploring forts, mountains, and nature responsibly while creating unforgettable experiences.</p>
+    </header>
+
+    <div class="cards-container">
+        <div class="card mission-card animate">
+            <h2><i class="fas fa-flag-checkered"></i> Our Mission</h2>
+            <ul>
+                <li><i class="fas fa-hiking"></i> Promote safe and responsible trekking</li>
+                <li><i class="fas fa-mountain"></i> Explore forts and nature with discipline</li>
+                <li><i class="fas fa-users"></i> Build a strong trekking community</li>
+                <li><i class="fas fa-heart"></i> Encourage fitness and love for nature</li>
+            </ul>
+        </div>
+
+        <div class="card vision-card animate">
+            <h2><i class="fas fa-eye"></i> Our Vision</h2>
+            <ul>
+                <li><i class="fas fa-star"></i> Become a trusted trekking community in Maharashtra</li>
+                <li><i class="fas fa-seedling"></i> Inspire youth to explore nature responsibly</li>
+                <li><i class="fas fa-campground"></i> Create unforgettable trekking experiences</li>
+                <li><i class="fas fa-landmark"></i> Increase attachment with history</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="team animate">
+        <h2>Our Team</h2>
+        <div class="team-members">
+            <div class="member">
+                <img src="Ankita.jpg" alt="Ankita">
+                <p>Ankita</p>
+            </div>
+            <div class="member">
+                <img src="Avi.jpg" alt="Avishkar">
+                <p>Avishkar</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact animate">
+        <h2>Contact Us</h2>
+        <p>📞 Phone: 8541256325</p>
+        <p>✉️ Email: trailvibe@gmail.com</p>
+    </div>
+
+    <script>
+        const animateElements = document.querySelectorAll('.animate');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        animateElements.forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>
