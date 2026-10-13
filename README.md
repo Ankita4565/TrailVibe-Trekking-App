@@ -1,3 +1,4 @@
+
 # 🏔️ TrailVibe – Trekking Booking Website
 
 **TrailVibe** is a website for people who love trekking. You can see upcoming treks and forts, create an account, log in, and book your place on a trek. The trek organizer (admin) can add and remove treks from a private dashboard.
@@ -148,3 +149,5 @@ The database is called **`trailvibe`** and has 4 tables:
 ---
 
 *Made with ❤️ for people who love mountains, forts and fresh air.*
+
+
